@@ -20,3 +20,15 @@ The algorithms can be run using the syntax: ``` python runMNIST.py```
 * [TensorFlow](https://www.tensorflow.org/)>=1.2
 
 The parameters for the **runMNIST** are:
+- ```num_epochs```: number of epochs need to run (default ```num_epochs=10```)
+- ```save_last```: number of last result need to save(default ```save_last=10```)
+- ```values_to_save```: number of points need to save in one run(default ```values_to_save=100```)
+- ```experiments```: number of runs(default ```experiments=5```)
+- ```batch_size```: batch_size to obtain the stochastic gradient(default ```batch_size=5```)
+- ```(alpha_min_exp,alpha_max_exp,alpha_exps)```: Tuning for SG stepsizes from 10^alpha_min_exp to 10^alpha_max_exp with exponential base alpha_exps
+- ```(gamma1_choices,gamma2_choices)```: Tuning set for TRish is set as gamma1 = gamma1_choices/G and gamma2 = gamma2_choices/G
+
+
+
+
+
